@@ -17,8 +17,8 @@ dataset:
   suffix: pkl
 
 batch_size: 2 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
-generator_seed: 42
+generator_seed: 424242
 train_val_split: [0.95, 0.05]
-num_workers: 4
+num_workers: 16
 pin_memory: false
 shuffle: false

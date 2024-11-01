@@ -90,9 +90,9 @@ inference:
   delta_max: 0.70
   delta_step: 0.05
   n_replica: 100
-  replica_per_batch: 64
+  replica_per_batch: 1
   num_timesteps: 1000
-  noise_scale: 1.0
+  noise_scale: 0.1
   probability_flow: true
   self_conditioning: true
   min_t: 1e-2

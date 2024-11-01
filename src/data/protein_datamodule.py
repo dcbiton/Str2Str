@@ -111,7 +111,7 @@ class ProteinDataModule(LightningDataModule):
         batch_size: int = 64,
         generator_seed: int = 42,
         train_val_split: Tuple[float, float] = (0.95, 0.05),
-        num_workers: int = 0,
+        num_workers: int = 16,
         pin_memory: bool = False,
         shuffle: bool = False,
     ) -> None:

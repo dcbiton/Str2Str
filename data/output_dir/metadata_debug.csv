@@ -1,0 +1,2 @@
+pdb_name,raw_path,oligomeric_count,oligomeric_detail,resolution,structure_method,num_chains,quaternary_category,processed_complex_path,raw_seq_len,modeled_seq_len
+9xim,data/mmcif_dir/pdb_mmcif/mmcif_files/9xim.cif,4,tetrameric,2.4,x-ray diffraction,4,heteromer,/data/Dionessa/Str2Str/data/output_dir/xi/9xim.pkl,2557,2315

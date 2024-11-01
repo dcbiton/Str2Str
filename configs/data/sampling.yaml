@@ -14,6 +14,6 @@ dataset:
 
 batch_size: 1
 generator_seed: 42
-num_workers: 1
+num_workers: 16
 pin_memory: false
 shuffle: false

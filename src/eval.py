@@ -153,11 +153,12 @@ def evaluate(cfg: DictConfig) -> Tuple[Dict[str, Any], Dict[str, Any]]:
     log.info("Starting predictions.")
     pred_dir = trainer.predict(model=model, dataloaders=dataloaders, ckpt_path=ckpt_path)[-1]
 
-    # metric_dict = trainer.callback_metrics
+    metric_dict = trainer.callback_metrics
     log.info("Starting evaluations.")
     metric_dict = evaluate_prediction(pred_dir, target_dir=cfg.target_dir)
     
     return metric_dict, object_dict
+    # return {}, object_dict
 
 
 @hydra.main(version_base="1.3", config_path="../configs", config_name="eval.yaml")

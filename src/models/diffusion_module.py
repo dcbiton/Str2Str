@@ -228,6 +228,7 @@ class DiffusionLitModule(LightningModule):
         # extract hyperparams for inference
         n_replica = self.hparams.inference.n_replica
         replica_per_batch = self.hparams.inference.replica_per_batch
+        # replica_per_batch = 1
         delta_range = np.arange(
             self.hparams.inference.delta_min,
             self.hparams.inference.delta_max + 1e-5,
